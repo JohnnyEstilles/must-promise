@@ -1,17 +1,17 @@
 # must-promise
 [![Build Status][travis-badge]][travis-url]
 
-Promise-related assertions plugin for `Must.js`
+Promise-related assertions plugin for [Must.js](https://github.com/moll/js-must).
 
 > This is a work-in-progress proof of concept and not ready for production.
 
-It currently uses a modified version of `Must.js` from  [JonnyEstilles/js-must#feature/extensibility](https://github.com/JohnnyEstilles/js-must/tree/feature/extensibility), which exposes:
+It currently uses a modified version of [Must.js](https://github.com/moll/js-must) from  [JonnyEstilles/js-must#feature/extensibility](https://github.com/JohnnyEstilles/js-must/tree/feature/extensibility), which exposes:
 
 - `Must.prototype.insist()`
 - `Must.prototype.chain()`
 - `Must.prototype.isEnumerable()`
 
-Hopefully these will eventually be permanently exposed in `Must.js`.
+Hopefully these will eventually be permanently exposed in [Must.js](https://github.com/moll/js-must).
 
 ## Usage
 ```js
@@ -32,10 +32,14 @@ promise.must.be.a.promise();
 To run unit tests simply:
 
 ```
+git clone https://github.com/JohnnyEstilles/must-promise.git
+cd must-promise
 npm install
 npm test
 ```
 
 
-[travis-badge]: https://travis-ci.org/JohnnyEstilles/must-promise.svg#master
+[travis-badge]: https://travis-ci.org/JohnnyEstilles/must-promise.svg?branch=master
 [travis-url]: https://travis-ci.org/JohnnyEstilles/must-promise
+
+[must-url]: https://github.com/moll/js-must
