@@ -3,7 +3,7 @@
 
 Promise-related assertions plugin for `Must.js`
 
-**This is a work-in-progress proof of concept.**
+> This is a work-in-progress proof of concept and not ready for production.
 
 It currently uses a modified version of `Must.js` from  [JonnyEstilles/js-must#feature/extensibility](https://github.com/JohnnyEstilles/js-must/tree/feature/extensibility), which exposes:
 
@@ -21,7 +21,7 @@ mustPromise(must);
 ```
 
 ## Assertions
-Sample assertion (just to test the proof of concept.)
+Sample assertion (just to test my proof of concept.)
 
 ### .promise()
 ```js
