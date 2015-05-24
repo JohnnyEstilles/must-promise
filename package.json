@@ -30,7 +30,9 @@
     "bluebird": "^2.9.25",
     "eslint": "^0.21.2",
     "mocha": "^2.2.5",
-    "must": "git://github.com/JohnnyEstilles/js-must#feature/extensibility"
+    "must": "git://github.com/JohnnyEstilles/js-must#feature/extensibility",
+    "q": "^1.4.1",
+    "rsvp": "^3.0.18"
   },
   "dependencies": {
     "kindof": "^1.0.0",
