@@ -19,8 +19,8 @@
   ],
   "author": "Johnny Estilles <johnny.estilles@agentia.asia> (http://www.agentia.asia)",
   "license": {
-    "type" : "AGPLv3",
-    "url" : "http://opensource.org/licenses/AGPL-3.0"
+    "type": "AGPLv3",
+    "url": "http://opensource.org/licenses/AGPL-3.0"
   },
   "bugs": {
     "url": "https://github.com/JohnnyEstilles/must-promise/issues"
