@@ -47,3 +47,16 @@ exports.rejected = function() {
     }
   });
 };
+
+exports.rejectedWith = function(expected) {
+  var self = this;
+  return this.actual.then(function() {
+    if (!self.negative) {
+      self.insist(false, 'be rejected');
+    }
+  }, function(reason) {
+    var must = new self.constructor(reason);
+    must.negative = self.negative;
+    must.eql(expected);
+  });
+};
