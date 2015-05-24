@@ -34,3 +34,16 @@ exports.fulfilledWith = function(expected) {
     }
   });
 };
+
+exports.rejected = function() {
+  var self = this;
+  return this.actual.then(function() {
+    if (!self.negative) {
+      self.insist(false, 'be rejected');
+    }
+  }, function() {
+    if (self.negative) {
+      self.insist(true, 'be rejected');
+    }
+  });
+};
