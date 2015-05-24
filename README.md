@@ -20,12 +20,32 @@ var mustPromise = require('must-promise');
 mustPromise(must);
 ```
 
-## Assertions
-Sample assertion (just to test my proof of concept.)
+## Matchers
+Sample matchers (just to test my proof of concept.)
 
 ### .promise()
 ```js
 promise.must.be.a.promise();
+```
+
+### .fulfilled()
+```js
+Promise.resolve('OK').must.be.fulfilled();
+```
+
+### .fulfilledWith()
+```js
+Promise.resolve('OK').must.be.fulfilledWith('OK');
+```
+
+### .rejected()
+```js
+Promise.reject('reason').must.be.rejected();
+```
+
+### .rejectedWith()
+```js
+Promise.reject('reason').must.be.rejectedWith('reject');
 ```
 
 ## Tests
