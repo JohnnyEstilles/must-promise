@@ -20,3 +20,17 @@ exports.fulfilled = function() {
     }
   });
 };
+
+exports.fulfilledWith = function(expected) {
+  var self = this;
+  return this.actual.then(function(value) {
+    var must = new self.constructor(value);
+    must.negative = self.negative;
+    must.eql(expected);
+    return value;
+  }, function() {
+    if (!self.negative) {
+      self.insist(false, 'be fulfilled with');
+    }
+  });
+};
