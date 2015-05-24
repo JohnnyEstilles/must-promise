@@ -4,7 +4,8 @@
   "description": "Promise assertion plugin for js-must",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha",
+    "lint": "eslint ./index.js ./plugin ./test"
   },
   "repository": {
     "type": "git",

@@ -11,4 +11,4 @@ before_install:
   - npm install -g eslint
 
 before_script:
-  - eslint ./plugin ./test
+  - npm run lint
